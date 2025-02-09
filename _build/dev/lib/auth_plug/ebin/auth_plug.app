@@ -1,0 +1,12 @@
+{application,auth_plug,
+             [{modules,['Elixir.AuthPlug','Elixir.AuthPlug.HTTPoisonMock',
+                        'Elixir.AuthPlug.Helpers','Elixir.AuthPlug.Token',
+                        'Elixir.AuthPlugOptional']},
+              {compile_env,[{auth_plug,[httpoison_mock],error}]},
+              {optional_applications,[]},
+              {applications,[kernel,stdlib,elixir,logger,httpoison,joken,plug,
+                             jason,envar,useful]},
+              {description,"Turnkey Auth Plug lets you protect any route in an Elixir/Phoenix App."},
+              {registered,[]},
+              {vsn,"1.5.2"},
+              {env,[{api_key,nil}]}]}.
